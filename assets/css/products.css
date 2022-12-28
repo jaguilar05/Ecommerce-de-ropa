@@ -35,8 +35,21 @@ nav ul li {
     margin-left: 20px;
 }
 h3{
+    font-size: 20px;
     margin-left: 10px;
 }
+
+.navegador .logo{
+    width: 40px;
+    height: 30px;
+    margin-right: 50px;
+    transition: .5s;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+}
+
 nav ul li a{
     text-decoration: none;
    
@@ -50,14 +63,18 @@ nav ul li a{
 }
 
 .tarjeta img{
-    width: 250px;
-    height: 300px;
+    width: 70%;
+    height: 65%
 }
+
 .tarjeta{
     width: 300px;
     height: 400px;
     margin: 15px;
-   
+    transition: 0.5s;
+}
+.tarjeta:hover {
+    transform: scale(1.1);
 }
 aside{ 
     

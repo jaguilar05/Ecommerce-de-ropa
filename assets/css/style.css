@@ -78,7 +78,22 @@ h2{
     width: 500px;
     gap: 10px;
     margin: 10px;
-    border: 1px solid red;
+    transition: 0.5s;
+}
+
+.tarjeta:hover {
+    transform: translate(5px,3px);
+}
+
+.navegador .logo{
+    width: 40px;
+    height: 30px;
+    margin-right: 50px;
+    transition: .5s;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
 }
 
  aside{ 
