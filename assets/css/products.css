@@ -55,22 +55,21 @@ nav ul li a{
    
     color: black;
 }
-
+/*
 .productos{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
+
 .tarjeta img{
     width: 70%;
     height: 65%
 }
-
+*/
 .tarjeta{
-    width: 300px;
-    height: 400px;
-    margin: 15px;
+ 
     transition: 0.5s;
 }
 .tarjeta:hover {
@@ -104,11 +103,14 @@ aside{
 }
 
  @media(max-width:576px){
+    .logo{
+        display: none;
+    }
     .navegador .fa-bars{
         display: block;
         color: white;
         font-size: 34px;
-
+        margin: auto;
     }
     .navegador > ul {
         position: fixed;
@@ -136,12 +138,50 @@ aside{
     .tarjeta{
         width: 100%;
     }
-    .footer {
+    footer {
         width: 100%;
     }
+    footer .piedepagina{
+        width: 100%;
+    }
+    
  }
 
  @media (max-width: 703px) {
+    .logo{
+        display: none;
+    }
+    .navegador .fa-bars{
+        display: block;
+        color: white;
+        font-size: 34px;
+        margin: auto;
+    }
+
+    .navegador > ul {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 70px; 
+        width: 200px;
+        height: 100vh;
+        background-color: #2197DD;
+        transition: 0.2s;
+    }
+    .navegador input {
+        display: none;
+    }
+    .navegador .fa-bars:hover + ul{
+        left:0
+
+    }
+    .navegador ul:hover{
+        left: 0;
+    }
+
     .navegador{
        justify-content: space-around;
     }
@@ -153,5 +193,11 @@ aside{
     nav ul li {
         margin-right: 10px;
         margin-left: 10px;
+    }
+ }
+
+ @media(max-width: 900px){
+    .navegador .buscar {
+        width: 50px;
     }
  }

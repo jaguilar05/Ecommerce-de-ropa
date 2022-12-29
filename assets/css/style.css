@@ -85,6 +85,10 @@ h2{
     transform: translate(5px,3px);
 }
 
+nav ul li a:hover{
+    color: #0d6efd;
+}
+
 .navegador .logo{
     width: 40px;
     height: 30px;
@@ -120,11 +124,14 @@ h2{
     display: none;
 }
  @media(max-width:576px){
+    .logo{
+        display: none;
+    }
     .navegador .fa-bars{
         display: block;
         color: white;
         font-size: 34px;
-
+        margin: auto;
     }
     .navegador > ul {
         position: fixed;
