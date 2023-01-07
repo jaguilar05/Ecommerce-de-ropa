@@ -100,6 +100,11 @@ nav ul li a:hover{
     transform: rotate(360deg);
 }
 
+section .tarjeta img{
+    border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    }
+
  aside{ 
     background-color: #022235;
  }
@@ -144,7 +149,7 @@ nav ul li a:hover{
         width: 200px;
         height: 100vh;
         background-color: #2197DD;
-        transition: 0.2s;
+        transition: 0.5s;
     }
     .navegador input {
         display: none;
@@ -152,6 +157,10 @@ nav ul li a:hover{
     .navegador .fa-bars:hover + ul{
         left:0
 
+    }
+    section .tarjeta img{
+    border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
     }
     .navegador ul:hover{
         left: 0;
