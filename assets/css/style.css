@@ -18,6 +18,17 @@
 h1{
     color: darkblue;
 }
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: stretch;
+    
+    
+}
+
 .navegador-items{
     display: flex;
     justify-content: center;
@@ -72,14 +83,14 @@ h2{
 
 
 .tarjeta-index img{
-    width: 50%;
+    width: 60%;
     height: 50%;
 }
 
 
 .tarjeta-index{
-    display: flex;
-    width: 500px;
+    
+    
     gap: 10px;
     margin: 10px;
     transition: 0.5s;
