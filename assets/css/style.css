@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-
+/*----------- Index -------------*/
 .navegador{
    display: flex;
    justify-content: center;
@@ -12,26 +15,15 @@
    height: 60px;
    
 }
-
-
-
-.navegador input{
-    border-radius: 8px;
-    margin-left: 30px;
-    height: 25px;
+h1{
+    color: darkblue;
 }
-
-
 .navegador-items{
     display: flex;
     justify-content: center;
     align-content: center;
     list-style-type: none;
-
-   
 }
-
-
 
 nav ul li {
     margin-right: 20px;
@@ -45,7 +37,7 @@ nav ul li a{
 }
 
 .encabezado{
-    background-image: url(../img/shopimage.jpg);
+    background-image: url(../img/shopimage-min.jpg);
     background-size: cover;
     width: 100%;
     height: 400px;
@@ -54,12 +46,21 @@ nav ul li a{
     align-items: center;
 }
 
+
 .encabezado button {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     border: none;
-    background-color: aqua;
-    font-size: 20px;
+    background-color:rgb(54, 163, 241);
+    font-size: 18px;
     padding: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    border: #022235;
+    background-color: gainsboro;
+    cursor: pointer;
 }
 
 h2{
@@ -67,13 +68,16 @@ h2{
     margin-top: 30px;
 }
 
-.tarjeta img{
+
+
+
+.tarjeta-index img{
     width: 50%;
     height: 50%;
 }
 
 
-.tarjeta{
+.tarjeta-index{
     display: flex;
     width: 500px;
     gap: 10px;
@@ -81,7 +85,7 @@ h2{
     transition: 0.5s;
 }
 
-.tarjeta:hover {
+.tarjeta-index:hover {
     transform: translate(5px,3px);
 }
 
@@ -100,7 +104,7 @@ nav ul li a:hover{
     transform: rotate(360deg);
 }
 
-section .tarjeta img{
+section .tarjeta-index img{
     border-radius: 5px;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
     }
@@ -128,6 +132,7 @@ section .tarjeta img{
 .navegador .fa-bars{
     display: none;
 }
+/*
  @media(max-width:576px){
     .logo{
         display: none;
@@ -136,7 +141,7 @@ section .tarjeta img{
         display: block;
         color: white;
         font-size: 34px;
-        margin: auto;
+        left: 0;
     }
     .navegador > ul {
         position: fixed;
@@ -158,22 +163,210 @@ section .tarjeta img{
         left:0
 
     }
-    section .tarjeta img{
+    section .tarjeta-index img{
     border-radius: 5px;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
     }
     .navegador ul:hover{
         left: 0;
     }
-    .tarjeta{
+    .tarjeta-index{
         width: 100%;
     }
     .footer {
         width: 100%;
     }
  }
+*/
+button {
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
 
- @media (max-width: 703px) {
+ @media(max-width:640px){
+    .tarjetas{
+        display: flex;
+        
+    }
+    .tarjeta-index{
+        width:90%;
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .tarjeta-index img {
+        width: 95%;
+    }
+    .tarjeta-index button{
+        padding: 10px 20px;
+        border: none;
+        background-color: #2197DD;
+        color: white;
+    }
+    .tarjetas{
+        flex-wrap: wrap;
+    }
+  
+    .tarjeta-index:hover {
+        transform: inherit
+    }
+
+}
+
+
+/*-----------Index---------------*/
+
+
+ /* --------Products -------------*/
+
+.navegador input{
+    border-radius: 8px;
+    margin-left: 30px;
+    height: 25px;
+}
+
+
+h3{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.tarje-info {
+    text-align: center;
+}
+.tarje-info p:nth-child(1){
+    font-size: 20px;
+    color:rgba(0, 9, 52, 0.512)
+}
+.tarje-info p:nth-child(2){
+    font-size: 15px;
+}
+
+.tarjeta img {
+    border-radius: 6px;
+}
+.tarjeta{
+    
+    transition: 0.5s;
+}
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+aside{ 
+    
+    background-color: #022235;
+ }
+.piedepagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piedepagina li {
+    list-style-type: none;
+    margin: 20px;
+}
+.piedepagina li a{
+    text-decoration: none;
+    color: azure;
+ }
+
+  footer{
+  width: 100%;
+
+ } 
+
+ .navegador .fa-bars{
+    display: none;
+}
+@media(max-width:640px){
+    .tarjeta{
+        width: 350px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .tarjeta img {
+        width: 95%;
+    }
+    .tarjeta button{
+        padding: 10px 20px;
+        border: none;
+        background-color: #2197DD;
+        color: white;
+    }
+    .productos{
+        flex-wrap: wrap;
+    }
+    .tarjeta:hover{
+        transform: inherit;
+    }
+}
+@media (max-width:768px) {
+    .tarjeta:hover{
+        transform: inherit;
+    }
+}
+ @media (max-width: 900px) {
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+    }
+    .encabezado h1{
+        margin-left: 10px;
+        
+    }
+    .encabezado button{
+        margin-top: 20px;
+    }
+    .navegador .fa-bars{
+        order: -1;
+        display: block;
+        color: white;
+        font-size: 34px;
+        
+    }
+
+    .navegador > ul {
+        position: fixed;
+        top: 0;
+        left: -400px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 70px; 
+        width: 310px;
+        height: 100vh;
+        background-color: #2197DD;
+        transition: 0.2s;
+    }
+    section .tarjeta img{
+        border-radius: 5px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+        }
+    section .tarjeta-index img{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    }
+
+    .navegador ul li{
+        margin-top: 15px;
+    }
+    .navegador ul li:hover{
+        color: #022235;
+    }
+    .navegador input {
+        display: none;
+    }
+    .navegador .fa-bars:hover + ul{
+        left:0
+
+    }
+    .navegador ul:hover{
+        left: 0;
+    }
+
     .navegador{
        justify-content: space-around;
     }
@@ -186,4 +379,188 @@ section .tarjeta img{
         margin-right: 10px;
         margin-left: 10px;
     }
+    
  }
+h3{
+    margin-top: 10px;
+}
+
+
+  /* -------- Fin Products -------------*/
+
+  /*------ Nosotros -------*/
+
+.presentacion{
+    background-color: rgba(208, 205, 246, 0.421);
+    border-radius: 30px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion img{
+    margin-left: 10px;
+    object-fit: contain;
+    border-radius: 6px;
+    border-radius: 6px;
+    width: 450px;
+    height: 450px;
+    margin-right: 20px;
+   
+}
+
+.presentacion-info{
+    text-align: justify;
+    margin: 15px;
+}
+
+  aside{ 
+     background-color: #022235;
+  }
+ .piedepagina{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0;
+     margin: 0;
+ }
+ .piedepagina li {
+     list-style-type: none;
+     margin: 20px;
+ }
+ .piedepagina li a{
+     text-decoration: none;
+     color: azure;
+  }
+  @media(max-width:700px){
+ 
+    .piedepagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  @media (max-width:575px){
+    .presentacion img{
+        
+        width: 70%;
+        height: auto;
+        object-fit: initial;
+    }
+  }
+  @media (max-width:850px) {
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .presentacion img {
+        
+        margin-top: 15px;
+    }
+    .presentacion-info{
+        margin-top: 5px;
+    }
+  }
+  /*------ Nosotros -------*/
+
+  /* -------- detail-products -------*/
+
+/*
+h3{
+    margin-left: 10px;
+}
+
+
+.presentacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.presentacion img{
+    width: 250px;
+    height: 300px;
+}
+
+.pedido{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+aside{ 
+    background-color: #022235;
+ }
+.piedepagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piedepagina li {
+    list-style-type: none;
+    margin: 20px;
+}
+.piedepagina li a{
+    text-decoration: none;
+    color: azure;
+ }
+
+  /* -------- detail-products -------*/
+  /*--------- Contactanos -----------*/
+  section input:hover{
+    background-color: #0d6efd;
+    cursor: pointer;
+  }
+  .canales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .canales p{
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+  }
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacto input{
+    border-radius: 6px;
+    width: 300px;
+    margin: 10px;
+  }
+  .direccion p{
+    margin-top: 8px;
+    text-align: center;
+  }
+  #contactos button{
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+ 
+
+   @media (max-width:400px) {
+    .form-check-label{
+        
+        font-size: 15px;
+    }
+  } 
+ 
