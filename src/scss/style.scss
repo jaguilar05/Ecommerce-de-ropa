@@ -1,125 +1,11 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-.navegador {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-  background-color: #2197DD;
-  height: 60px;
-}
-.navegador i {
-  display: none;
-}
-.navegador input {
-  border-radius: 8px;
-  margin-left: 30px;
-  height: 25px;
-}
-.navegador a .logo {
-  width: 40px;
-  height: 30px;
-  margin-right: 50px;
-  transition: 0.5s;
-}
-.navegador a .logo:hover {
-  transform: rotate(360deg);
-}
-.navegador ul {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  list-style-type: none;
-}
-.navegador ul li {
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.navegador ul li a {
-  text-decoration: none;
-  color: black;
-}
-.navegador ul li a:hover {
-  color: #0d6efd;
-}
-@media (max-width: 900px) {
-  .navegador {
-    justify-content: space-around;
-  }
-  .navegador input {
-    display: none;
-  }
-  .navegador i {
-    display: block;
-    order: -1;
-    color: white;
-    font-size: 34px;
-  }
-  .navegador i:hover + ul {
-    left: 0;
-  }
-  .navegador ul {
-    position: fixed;
-    top: 0;
-    left: -400px;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding-top: 70px;
-    width: 310px;
-    height: 100vh;
-    background-color: #2197DD;
-    transition: 0.2s;
-  }
-  .navegador ul:hover {
-    left: 0;
-  }
-  .navegador ul li {
-    margin-top: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  .navegador ul li:hover {
-    color: #022235;
-  }
-}
-
-footer {
-  width: 100%;
-}
-footer aside {
-  background-color: #022235;
-}
-footer aside .piedepagina {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-@media (max-width: 700px) {
-  footer aside .piedepagina {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-footer aside .piedepagina li {
-  list-style-type: none;
-  margin: 20px;
-}
-footer aside .piedepagina li a {
-  text-decoration: none;
-  color: azure;
-}
+@import "reset";
+@import "navbar";
+@import "footer";
 
 /*----------- Index -------------*/
+
 h1 {
   color: rgb(1, 1, 65);
 }
@@ -153,7 +39,7 @@ h1 {
 }
 
 button:hover {
-  border: #022235;
+  border: $color-secundario;
   background-color: gainsboro;
   cursor: pointer;
 }
@@ -184,7 +70,7 @@ section .tarjeta-index img {
 }
 
 aside {
-  background-color: #022235;
+  background-color: $color-secundario;
 }
 
 button {
@@ -209,7 +95,7 @@ button {
   .tarjeta-index button {
     padding: 10px 20px;
     border: none;
-    background-color: #2197DD;
+    background-color: $color-nav;
     color: white;
   }
   .tarjetas {
@@ -229,7 +115,7 @@ button {
   .tarjeta button {
     padding: 10px 20px;
     border: none;
-    background-color: #2197DD;
+    background-color: $color-nav;
     color: white;
   }
   .productos {
@@ -241,6 +127,8 @@ button {
 }
 /*-----------Index---------------*/
 /* --------Products -------------*/
+
+
 h3 {
   font-size: 20px;
   margin-left: 10px;
@@ -288,6 +176,7 @@ h3 {
   .encabezado button {
     margin-top: 20px;
   }
+
   section .tarjeta img {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -296,7 +185,10 @@ h3 {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+
 }
+
+
 /* -------- Fin Products -------------*/
 /*------ Nosotros -------*/
 .presentacion {
@@ -349,6 +241,7 @@ h3 {
   }
 }
 /*------ Nosotros -------*/
+
 /*--------- Contactanos -----------*/
 section input:hover {
   background-color: #0d6efd;
@@ -395,4 +288,4 @@ section input:hover {
   .form-check-label {
     font-size: 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

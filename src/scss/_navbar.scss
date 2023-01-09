@@ -1,0 +1,90 @@
+@import "variables";
+.navegador{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color:$color-nav ;
+    height: 60px;
+        i{
+            display: none;
+        }
+        input{
+            border-radius: 8px;
+            margin-left: 30px;
+            height: 25px;
+        }
+    a .logo{
+        width: 40px;
+        height: 30px;
+        margin-right: 50px;
+        transition: 0.5s;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+        ul{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        list-style-type: none;
+         li {
+            margin-right: 20px;
+            margin-left: 20px;
+            a{
+               text-decoration: none;
+          
+               color: black;
+               &:hover{
+                color: #0d6efd;
+
+               }
+           }
+       }
+        }
+        @media (max-width:900px) {
+            &{
+                justify-content: space-around;
+            }
+            input{
+                display: none;
+            }
+            i{
+                 display: block;
+                 order: -1;
+                 color: white;
+                 font-size: 34px;
+                 &:hover + ul {
+                     left: 0;
+                   }
+             }
+              ul {
+                 position: fixed;
+                 top: 0;
+                 left: -400px;
+                 flex-direction: column;
+                 justify-content: start;
+                 align-items: center;
+                 padding-top: 70px; 
+                 width: 310px;
+                 height: 100vh;
+                 background-color: #2197DD;
+                 transition: 0.2s;
+                 &:hover{
+                     left: 0;
+                 }
+                 li {
+                     margin-top: 15px;
+                     margin-right: 10px;
+                     margin-left: 10px;
+                     &:hover{
+                         color: $color-secundario;
+         
+                     }
+                 }
+             }
+             
+         }
+         
+       
+ }
+ 
