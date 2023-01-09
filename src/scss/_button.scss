@@ -1,0 +1,10 @@
+@import "variables";
+
+$boton:(
+    fondo :$color-secundario,
+    bordes:none,
+    color: gainsboro,
+    border-radius: 5px,
+    cursor: pointer,
+    padding: 5px,
+)

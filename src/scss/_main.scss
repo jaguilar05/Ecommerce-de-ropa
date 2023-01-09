@@ -1,0 +1,215 @@
+@import "button";
+  
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+   
+    .tarjeta-index {
+        margin: 10px;
+        transition: 0.5s;
+        
+        
+        &:hover{
+            transform: translate(5px, 3px);
+        }
+     
+            img{
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            .tarjeta-info{
+                width: 60%;
+                text-align: center;
+            }
+        }
+        
+  }
+
+h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+h3 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+
+   
+.tarjeta {
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 6px;
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{
+            border-radius: 6px;
+        }
+        .tarje-info {
+            text-align: center;
+            
+                p:nth-child(1) {
+                    font-size: 20px;
+                    color: black;
+                }
+                p:nth-child(2) {
+                    font-size: 15px;
+                }
+                button{
+                    margin-bottom: 5px;
+                }
+          }
+    }
+  
+button{
+    background-color: map-get($map: $boton, $key:color );
+    cursor: map-get($map: $boton, $key:cursor );
+    border-radius: map-get($map: $boton, $key:border-radius );
+    padding: map-get($map: $boton, $key:padding );
+    border: map-get($map: $boton, $key:bordes );
+    &:hover{
+        background-color: #0d6efd;
+    }
+  }
+
+.boton-encabezado:hover{
+    background-color: gainsboro;
+  }
+
+.canales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        p {
+            width: 50vw;
+            margin: auto;
+            text-align: center;
+        }
+    }
+  
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        input {
+            border-radius: 6px;
+            width: 300px;
+            margin: 10px;
+        }
+    }
+  
+section input:hover {
+    background-color: #0d6efd;
+    cursor: pointer;
+    }
+ 
+  .presentacion {
+    background-color: rgba(208, 205, 246, 0.421);
+    border-radius: 30px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  -3px 5px 0px rgba(0,0,0,0.75);
+    padding: 30px;
+    min-width: 340px;
+        img {
+            margin-left: 10px;
+            border-radius: 6px;
+            width: 350px;
+            height: 400px;
+            margin-right: 20px;
+            &:hover{
+                filter: brightness(120%);
+            }
+        }
+        .presentacion-info {
+            text-align: justify;
+            margin: 15px;
+            h3{
+                margin: auto;
+
+            }
+            .pedido{
+                margin-top: 10px;
+                select{
+                    width: 40px;
+                    border-radius: 5px;
+                }
+                p:nth-child(2){
+                    margin-bottom: 10px;
+                
+                }
+                button{
+                    margin-top: 12px;
+                }
+                h4{
+                    margin-bottom: 8px;
+                }
+               
+            }
+        }
+    
+  }
+  .tituloCarrito{
+    text-align: center;
+    margin-bottom: 10px;
+   }
+  .recomendaciones{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: auto;
+        .carritoProductos{
+            width: 45%;
+            border: 1px solid black;
+            margin-left: 10px;
+            border-radius: 6px;
+            margin-bottom :20px; ;
+            .carrito-info{
+                text-align: center;
+                button{
+                    margin-bottom: 10px;
+                }
+            }
+            img{
+                width: 100%;
+                border-radius: 6px;
+                &:hover{
+                    filter: brightness(120%);
+                }
+            }
+        }
+        @media (max-width:700px) {
+            &{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .carritoProductos{
+                    width: 80%;
+                    margin: auto;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            
+        }
+  }
+ 
+  
+
+  
