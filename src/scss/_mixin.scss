@@ -1,0 +1,9 @@
+@mixin encabezado($width){
+    background-image: url(../img/shopimage-min.jpg);
+    background-size: cover;
+    width: $width;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
