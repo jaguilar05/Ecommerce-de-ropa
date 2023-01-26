@@ -5,11 +5,11 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
    
+   
     .tarjeta-index {
         margin: 10px;
         transition: 0.5s;
-        
-        
+        text-align: center;
         &:hover{
             transform: translate(5px, 3px);
         }
@@ -21,7 +21,7 @@
             }
             .tarjeta-info{
                 width: 60%;
-                text-align: center;
+                margin: auto;
             }
         }
         
@@ -213,7 +213,7 @@ section input:hover {
   
 /*----------- Index -------------*/
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
     .tarjetas {
       display: flex;
       flex-wrap: wrap;
