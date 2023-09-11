@@ -32,7 +32,25 @@
             </div>
         </nav>
     </header>
-    <main class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <aside class="col-sm-2">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group" style="font-size: 10px;"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&dollar;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
+            <main id="items" class="col-sm-10 row" style="margin-top: 20px;" ></main>
+            <!-- Carrito -->
+            
+        </div>
+    </div>
+    <!-- 
+    <main id="items" class="container-fluid">
         <h3>Ordenar y filtrar</h3> 
         <section class="productos d-flex flex-wrap justify-content-center align-items-center">
             <div class="tarjeta col-12 col-md-4 col-lg-4 col-xl-3 m-4 w-40 h-50">
@@ -97,7 +115,7 @@
             <div class="tarjeta col-12 col-md-4 col-lg-4 col-xl-3 m-4 w-40 h-50">
                 <img class="img-fluid w-70 h-60" src="../assets/img/camisetablanca-min.jpg" alt="camiseta blanca">
                 <div class="tarje-info">
-                    <p>Camiseta negra básica</p>
+                    <p>Camiseta blanca básica</p>
                     <p>$90.000</p>
                     <button type="submit">Comprar</button>
                 </div>
@@ -111,8 +129,10 @@
                 </div>
             </div>
         </section>
+        
     </main>
-    <footer>
+    -->
+    <footer style="margin-top: 20px;">
         <aside>
             <ul class="piedepagina">
                 <li><a href="">política de privacidad</a></li>
@@ -127,5 +147,9 @@
             </div>
         </aside>
     </footer>
+    <script src="../js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
