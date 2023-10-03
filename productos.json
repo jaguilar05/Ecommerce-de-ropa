@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "nombre":"camiseta negra con estampado",
+        "precio": 80000,
+        "imagen":"../assets/img/camiseta-min.jpg"
+    },
+    {
+        "id": 2,
+        "nombre":"polo blanco",
+        "precio": 70000,
+        "imagen":"../assets/img/polo.jpg"
+    },
+    {
+        "id": 3,
+        "nombre":"camiseta blanca básica",
+        "precio": 80000,
+        "imagen":"../assets/img/camisetablanca-min.jpg"
+    },
+    {
+        "id": 4,
+        "nombre":"camiseta negra básica",
+        "precio": 80000,
+        "imagen":"../assets/img/camisetanegra-min.jpg"
+    },
+    {
+        "id": 5,
+        "nombre":"chaqueta negra",
+        "precio": 120000,
+        "imagen":"../assets/img/saconegro.jpg"
+    },
+    {
+        "id": 6,
+        "nombre":"polo negro",
+        "precio": 80000,
+        "imagen":"../assets/img/polonegro.jpg"
+    },
+    {
+        "id": 7,
+        "nombre":"camiseta negra básica",
+        "precio": 100000,
+        "imagen":"../assets/img/camisetanegra-min.jpg"
+    },
+    {
+        "id": 8,
+        "nombre":"camiseta blanca básica",
+        "precio": 90000,
+        "imagen":"../assets/img/camisetablanca-min.jpg"
+    },
+    {
+        "id": 9,
+        "nombre":"chaqueta blanca",
+        "precio": 120000,
+        "imagen":"../assets/img/busoblanco.jpg"
+    }
+]
